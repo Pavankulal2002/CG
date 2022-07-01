@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>reverse the number</title>
+
+
+</head>
+<body>
+<script>
+var n=prompt("Enter a input","");
+var num=parseInt(n);
+var rev=0;
+
+if(!isNaN(num))
+{
+
+while(num!=0)
+{
+
+var rem=num%10;
+num=parseInt(num/10);
+var rev=rem+rev*10;
+}
+alert("The number = "+n+" and reversed number = "+rev)
+}
+else
+{
+var str=n.toUpperCase();
+
+var vowel;
+for(var i=0;i<str.length;i++)
+{
+if(str.charAt(i)=="A"|"E"|"I"|"O"|"U")
+{
+vowel=i+1
+alert("leftmost vovel position"+vowel)
+exit(0)
+}
+
+}
+alert("No vowel present")
+
+
+}
+
+</script>
+
+</body>
+</html>
